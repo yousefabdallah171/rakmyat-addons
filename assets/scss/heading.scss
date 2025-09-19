@@ -1,0 +1,87 @@
+// Heading Widget Styles
+.rakmyat-heading {
+    margin: 0;
+    padding: 0;
+
+    .title {
+        margin: 0 0 $spacing-sm 0;
+        line-height: 1.2;
+        font-weight: 600;
+        transition: $transition;
+
+        // Default subtle text shadow for better readability
+        &.has-text-shadow {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        // Enhanced text shadow for dramatic effect
+        &.dramatic-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        // Glow effect
+        &.glow-effect {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: $transition;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .subtitle {
+        margin: 0;
+        opacity: 0.8;
+        font-size: 0.9em;
+        line-height: 1.4;
+        color: $text-light;
+
+        // Subtle text shadow for subtitle
+        &.has-text-shadow {
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        // Enhanced subtitle shadow
+        &.enhanced-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    // Dark mode
+    .dark-mode & {
+        .title {
+            color: $dark-text;
+
+            // Adjusted text shadows for dark mode
+            &.has-text-shadow {
+                text-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+            }
+
+            &.dramatic-shadow {
+                text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+            }
+
+            &.glow-effect {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        .subtitle {
+            color: $dark-text-secondary;
+
+            &.has-text-shadow {
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+            }
+
+            &.enhanced-shadow {
+                text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+// Main SCSS Variables
+$primary-color: #007cba;
+$secondary-color: #667eea;
+$text-color: #333;
+$text-light: #666;
+$border-color: #e1e1e1;
+$white: #ffffff;
+$black: #000000;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+// Dark mode colors
+$dark-bg: #1a1a1a;
+$dark-surface: #2d2d2d;
+$dark-text: #ffffff;
+$dark-text-secondary: #b3b3b3;
+$dark-border: #404040;
+
+// Common spacing
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-2xl: 40px;
+
+// Border radius
+$border-radius: 8px;
+$border-radius-sm: 4px;
+$border-radius-lg: 12px;
+
+// Transitions
+$transition: all 0.3s ease;
+$transition-fast: all 0.2s ease;
+
+// Shadows
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+
+// Base widget styles
+.rakmyat-widget {
+    box-sizing: border-box;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    // Dark mode support
+    &.dark-mode {
+        background-color: $dark-bg;
+        color: $dark-text;
+
+        .rakmyat-heading,
+        .rakmyat-video,
+        .rakmyat-blog-posts {
+            background-color: $dark-surface;
+            color: $dark-text;
+            border-color: $dark-border;
+        }
+    }
+}
+
+// Dark mode toggle
+.rakmyat-dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: $primary-color;
+    color: $white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: $transition;
+    box-shadow: $shadow-lg;
+
+    &:hover {
+        background: darken($primary-color, 10%);
+        transform: scale(1.1);
+    }
+
+    &.dark {
+        background: #ffa500;
+    }
+}
+
+// Utility classes
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: $spacing-xs; }
+.mb-2 { margin-bottom: $spacing-sm; }
+.mb-3 { margin-bottom: $spacing-md; }
+.mb-4 { margin-bottom: $spacing-lg; }
+.mb-5 { margin-bottom: $spacing-xl; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: $spacing-xs; }
+.mt-2 { margin-top: $spacing-sm; }
+.mt-3 { margin-top: $spacing-md; }
+.mt-4 { margin-top: $spacing-lg; }
+.mt-5 { margin-top: $spacing-xl; }
