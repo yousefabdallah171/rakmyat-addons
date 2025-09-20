@@ -1,0 +1,102 @@
+@import "_variables";
+
+.rakmyat-blog-posts {
+    &.rakmyat-blog-posts-grid {
+        display: grid;
+        gap: $rakmyat-spacer-lg;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media (max-width: $rakmyat-breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $rakmyat-breakpoint-sm) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &.rakmyat-blog-posts-list {
+        display: flex;
+        flex-direction: column;
+        gap: $rakmyat-spacer-lg;
+    }
+
+    .rakmyat-blog-post {
+        background: $rakmyat-widget-background;
+        border-radius: $rakmyat-border-radius;
+        box-shadow: $rakmyat-box-shadow-sm;
+        overflow: hidden;
+        transition: $rakmyat-transition-base;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: $rakmyat-box-shadow;
+        }
+
+        .post-thumbnail {
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: $rakmyat-transition-base;
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+
+        .post-content {
+            padding: $rakmyat-spacer-lg;
+
+            .post-title {
+                margin: 0 0 $rakmyat-spacer-sm 0;
+                font-size: $rakmyat-font-size-lg;
+                font-weight: $rakmyat-font-weight-bold;
+
+                a {
+                    color: $rakmyat-dark;
+                    text-decoration: none;
+                    transition: $rakmyat-transition-base;
+
+                    &:hover {
+                        color: $rakmyat-primary;
+                    }
+                }
+            }
+
+            .post-meta {
+                margin-bottom: $rakmyat-spacer;
+                color: $rakmyat-secondary;
+                font-size: $rakmyat-font-size-sm;
+
+                span {
+                    margin-right: $rakmyat-spacer-sm;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .post-excerpt {
+                margin-bottom: $rakmyat-spacer;
+                color: $rakmyat-secondary;
+                line-height: $rakmyat-line-height-base;
+            }
+
+            .read-more {
+                color: $rakmyat-primary;
+                text-decoration: none;
+                font-weight: $rakmyat-font-weight-bold;
+                transition: $rakmyat-transition-base;
+
+                &:hover {
+                    color: darken($rakmyat-primary, 10%);
+                }
+            }
+        }
+    }
+}

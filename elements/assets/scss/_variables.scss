@@ -1,0 +1,155 @@
+/**
+ * Rakmyat Addons - Global SCSS Variables
+ * Global styling variables for all widgets
+ *
+ * @package RakmyatAddons
+ * @version 1.0.0
+ */
+
+// === Base Variables ===
+$rakmyat-primary: #007cba !default;
+$rakmyat-secondary: #6c757d !default;
+$rakmyat-success: #28a745 !default;
+$rakmyat-danger: #dc3545 !default;
+$rakmyat-warning: #ffc107 !default;
+$rakmyat-info: #17a2b8 !default;
+$rakmyat-light: #f8f9fa !default;
+$rakmyat-dark: #343a40 !default;
+
+// === Typography ===
+$rakmyat-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+$rakmyat-font-size-base: 16px !default;
+$rakmyat-font-size-sm: 14px !default;
+$rakmyat-font-size-lg: 18px !default;
+$rakmyat-font-weight-light: 300 !default;
+$rakmyat-font-weight-normal: 400 !default;
+$rakmyat-font-weight-bold: 700 !default;
+$rakmyat-line-height-base: 1.6 !default;
+
+// === Spacing ===
+$rakmyat-spacer: 1rem !default;
+$rakmyat-spacer-xs: 0.25rem !default;
+$rakmyat-spacer-sm: 0.5rem !default;
+$rakmyat-spacer-md: 1rem !default;
+$rakmyat-spacer-lg: 1.5rem !default;
+$rakmyat-spacer-xl: 3rem !default;
+
+// === Borders ===
+$rakmyat-border-width: 1px !default;
+$rakmyat-border-color: #dee2e6 !default;
+$rakmyat-border-radius: 0.375rem !default;
+$rakmyat-border-radius-sm: 0.25rem !default;
+$rakmyat-border-radius-lg: 0.5rem !default;
+
+// === Shadows ===
+$rakmyat-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !default;
+$rakmyat-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !default;
+$rakmyat-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175) !default;
+
+// === Transitions ===
+$rakmyat-transition-base: all 0.3s ease !default;
+$rakmyat-transition-fast: all 0.15s ease !default;
+$rakmyat-transition-slow: all 0.5s ease !default;
+
+// === Widget Common Variables ===
+$rakmyat-widget-padding: $rakmyat-spacer-lg !default;
+$rakmyat-widget-margin: $rakmyat-spacer-md !default;
+$rakmyat-widget-background: #ffffff !default;
+$rakmyat-widget-border: $rakmyat-border-width solid $rakmyat-border-color !default;
+$rakmyat-widget-border-radius: $rakmyat-border-radius !default;
+$rakmyat-widget-shadow: $rakmyat-box-shadow-sm !default;
+
+// === Breakpoints ===
+$rakmyat-breakpoint-xs: 576px !default;
+$rakmyat-breakpoint-sm: 768px !default;
+$rakmyat-breakpoint-md: 992px !default;
+$rakmyat-breakpoint-lg: 1200px !default;
+$rakmyat-breakpoint-xl: 1400px !default;
+
+// === Heading Widget Variables ===
+$heading-font-family: $rakmyat-font-family !default;
+$heading-font-weight: $rakmyat-font-weight-bold !default;
+$heading-line-height: 1.2 !default;
+$heading-margin-bottom: $rakmyat-spacer-md !default;
+$heading-color: $rakmyat-dark !default;
+
+// === Blog Posts Widget Variables ===
+$blog-post-spacing: $rakmyat-spacer-lg !default;
+$blog-post-border: $rakmyat-widget-border !default;
+$blog-post-border-radius: $rakmyat-border-radius !default;
+$blog-post-shadow: $rakmyat-box-shadow-sm !default;
+$blog-post-title-color: $rakmyat-dark !default;
+$blog-post-meta-color: $rakmyat-secondary !default;
+$blog-post-excerpt-color: $rakmyat-secondary !default;
+
+// === Video Widget Variables ===
+$video-border-radius: $rakmyat-border-radius !default;
+$video-overlay-bg: rgba(0, 0, 0, 0.7) !default;
+$video-play-button-size: 80px !default;
+$video-play-button-color: #ffffff !default;
+$video-play-button-bg: rgba(255, 255, 255, 0.2) !default;
+
+// === Button Variables ===
+$button-padding: 0.75rem 1.5rem !default;
+$button-font-size: $rakmyat-font-size-base !default;
+$button-font-weight: $rakmyat-font-weight-normal !default;
+$button-border-radius: $rakmyat-border-radius !default;
+$button-transition: $rakmyat-transition-base !default;
+$button-primary-bg: $rakmyat-primary !default;
+$button-primary-color: #ffffff !default;
+$button-secondary-bg: $rakmyat-secondary !default;
+$button-secondary-color: #ffffff !default;
+
+// === Card Variables ===
+$card-padding: $rakmyat-spacer-lg !default;
+$card-background: $rakmyat-widget-background !default;
+$card-border: $rakmyat-widget-border !default;
+$card-border-radius: $rakmyat-border-radius !default;
+$card-shadow: $rakmyat-box-shadow-sm !default;
+$card-title-color: $rakmyat-dark !default;
+$card-text-color: $rakmyat-secondary !default;
+
+// === Form Variables ===
+$form-input-padding: 0.75rem !default;
+$form-input-font-size: $rakmyat-font-size-base !default;
+$form-input-border: $rakmyat-border-width solid $rakmyat-border-color !default;
+$form-input-border-radius: $rakmyat-border-radius !default;
+$form-input-focus-border-color: $rakmyat-primary !default;
+$form-input-focus-shadow: 0 0 0 0.2rem rgba(0, 123, 186, 0.25) !default;
+
+// === Grid Variables ===
+$grid-columns: 12 !default;
+$grid-gutter-width: 30px !default;
+$grid-container-max-width: 1200px !default;
+
+// === Animation Variables ===
+$animation-duration-fast: 0.15s !default;
+$animation-duration-base: 0.3s !default;
+$animation-duration-slow: 0.5s !default;
+$animation-easing: ease !default;
+$animation-easing-in: ease-in !default;
+$animation-easing-out: ease-out !default;
+$animation-easing-in-out: ease-in-out !default;
+
+// === Z-index Variables ===
+$z-dropdown: 1000 !default;
+$z-sticky: 1020 !default;
+$z-fixed: 1030 !default;
+$z-modal-backdrop: 1040 !default;
+$z-modal: 1050 !default;
+$z-popover: 1060 !default;
+$z-tooltip: 1070 !default;
+
+// === Utility Variables ===
+$text-muted: $rakmyat-secondary !default;
+$text-primary: $rakmyat-primary !default;
+$text-success: $rakmyat-success !default;
+$text-danger: $rakmyat-danger !default;
+$text-warning: $rakmyat-warning !default;
+$text-info: $rakmyat-info !default;
+
+// === Accessibility Variables ===
+$focus-ring-width: 0.2rem !default;
+$focus-ring-color: rgba(13, 110, 253, 0.25) !default;
+$focus-ring-blur: 0 !default;
+$focus-ring-opacity: 1 !default;

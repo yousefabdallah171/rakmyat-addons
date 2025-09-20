@@ -1,0 +1,18 @@
+{
+    "name": "rakmyat/addons",
+    "description": "Rakmyat Addons Plugin with SCSS Support",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=7.4",
+        "scssphp/scssphp": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "RakmyatAddons\\": "includes/"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "optimize-autoloader": true
+    }
+}

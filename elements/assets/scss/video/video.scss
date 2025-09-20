@@ -1,0 +1,39 @@
+@import "_variables";
+
+.rakmyat-video-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: $rakmyat-border-radius;
+    overflow: hidden;
+    box-shadow: $rakmyat-box-shadow-sm;
+
+    &.rakmyat-aspect-ratio-16_9 {
+        aspect-ratio: 16/9;
+    }
+
+    &.rakmyat-aspect-ratio-4_3 {
+        aspect-ratio: 4/3;
+    }
+
+    &.rakmyat-aspect-ratio-21_9 {
+        aspect-ratio: 21/9;
+    }
+
+    &.rakmyat-aspect-ratio-1_1 {
+        aspect-ratio: 1/1;
+    }
+
+    iframe,
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    video {
+        object-fit: cover;
+    }
+}

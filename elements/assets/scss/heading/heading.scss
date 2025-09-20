@@ -1,0 +1,124 @@
+/**
+ * Rakmyat Heading Widget - SCSS
+ * Advanced heading widget with styling options
+ *
+ * @package RakmyatAddons
+ * @version 1.0.0
+ */
+
+// Import global variables
+@import "_variables";
+
+// Heading Widget Base Styles
+.rakmyat-heading-widget {
+    .rakmyat-heading-title {
+        font-family: $heading-font-family;
+        font-weight: $heading-font-weight;
+        line-height: $heading-line-height;
+        margin: 0 0 $heading-margin-bottom 0;
+        color: $heading-color;
+        word-wrap: break-word;
+
+        // Default size
+        &.rakmyat-size-small {
+            font-size: 15px;
+        }
+
+        &.rakmyat-size-default {
+            font-size: 19px;
+        }
+
+        &.rakmyat-size-medium {
+            font-size: 29px;
+        }
+
+        &.rakmyat-size-large {
+            font-size: 39px;
+        }
+
+        &.rakmyat-size-xl {
+            font-size: 59px;
+        }
+
+        &.rakmyat-size-xxl {
+            font-size: 79px;
+        }
+
+        // Link styles
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: $rakmyat-transition-base;
+
+            &:hover {
+                text-decoration: none;
+                opacity: 0.8;
+            }
+
+            &:focus {
+                outline: $focus-ring-width solid $focus-ring-color;
+                outline-offset: 2px;
+            }
+        }
+    }
+
+    // Responsive adjustments
+    @media (max-width: $rakmyat-breakpoint-md) {
+        .rakmyat-heading-title {
+            &.rakmyat-size-xl {
+                font-size: 45px;
+            }
+
+            &.rakmyat-size-xxl {
+                font-size: 60px;
+            }
+        }
+    }
+
+    @media (max-width: $rakmyat-breakpoint-sm) {
+        .rakmyat-heading-title {
+            &.rakmyat-size-large {
+                font-size: 32px;
+            }
+
+            &.rakmyat-size-xl {
+                font-size: 38px;
+            }
+
+            &.rakmyat-size-xxl {
+                font-size: 45px;
+            }
+        }
+    }
+
+    // RTL Support
+    [dir="rtl"] & {
+        .rakmyat-heading-title {
+            text-align: right;
+        }
+    }
+
+    // Accessibility improvements
+    @media (prefers-reduced-motion: reduce) {
+        .rakmyat-heading-title a {
+            transition: none;
+        }
+    }
+
+    // High contrast mode support
+    @media (prefers-contrast: high) {
+        .rakmyat-heading-title {
+            a:focus {
+                outline: 3px solid;
+            }
+        }
+    }
+
+    // Print styles
+    @media print {
+        .rakmyat-heading-title {
+            color: black !important;
+            text-shadow: none !important;
+        }
+    }
+}
